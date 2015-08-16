@@ -1,0 +1,34 @@
+#toggle-view {
+	list-style:none;	
+	font-family:arial;
+	font-size:11px;
+	margin:0;
+	padding:5px;
+	width:100%;
+	background-color: #819ff7;
+}
+
+	#toggle-view li {
+		padding:10px;
+		border-bottom:1px solid #ccc;
+		position:relative;
+		cursor:pointer;
+		background-color: #5882fa;
+	}
+	
+	#toggle-view h3 {
+		margin:0;
+		font-size:14px;
+	}
+
+	#toggle-view span {
+		position:absolute;
+		right:5px; top:0;
+		color:#ccc;
+		font-size:13px;
+	}
+	
+	#toggle-view .panel {
+		margin:5px 0;
+		display:none;
+	}	
