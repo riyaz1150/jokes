@@ -13,5 +13,7 @@ $(document).ready(function () {
 		}
 		
 	});
+	
+	$('.inner_ul li:last-child').css('border','0px');
 
 });
