@@ -41,7 +41,14 @@ body{
 }	
 
 .inner_ul{
-	margin-left: -30px;
+	list-style: outside none disc;
+    margin-left: -15px;
+}
+
+ul.inner_ul li {
+	color: #fff;
+    font-size: 14px;
+    padding: 5px 5px 0 !important;
 }
 
 .app_heading{
@@ -50,6 +57,3 @@ body{
 	font-weight: bold;
 }
 
-ul.app_heading li {
-	padding-bottom:0px !important;
-}
