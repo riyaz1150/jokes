@@ -2,13 +2,13 @@
 
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.malwaninfotech.JokesShayariHindi"
+        id        = "com.malwaninfotech.HindiJokes"
         version   = "1.0">
 
-    <name>Jokes And Shayari</name>
+    <name>Hindi Jokes</name>
 
     <description>
-        Jokes And Shayari In Hindi
+        Hindi Jokes ,Find new and interesting jokes in hindi language.
     </description>
 
     <author href="http://malwaninfotech.com" email="hr@malwaninfotech.com">
@@ -18,11 +18,11 @@
     <preference name="permissions" value="none"/>
 
 
-    <icon src="res/icon/android/drawable-ldpi/mi_hew.png" gap:platform="android" gap:qualifier="ldpi" />
-    <icon src="res/icon/android/drawable-mdpi/mi_hew.png" gap:platform="android" gap:qualifier="mdpi" />
-    <icon src="res/icon/android/drawable-hdpi/mi_hew.png" gap:platform="android" gap:qualifier="hdpi" />
-    <icon src="res/icon/android/drawable-xhdpi/mi_hew.png" gap:platform="android" gap:qualifier="xhdpi" />
-    <icon src="res/icon/android/drawable-xxhdpi/mi_hew.png" gap:platform="android" gap:qualifier="xxhdpi" />
+    <icon src="res/icon/android/drawable-ldpi/mi_hj.png" gap:platform="android" gap:qualifier="ldpi" />
+    <icon src="res/icon/android/drawable-mdpi/mi_hj.png" gap:platform="android" gap:qualifier="mdpi" />
+    <icon src="res/icon/android/drawable-hdpi/mi_hj.png" gap:platform="android" gap:qualifier="hdpi" />
+    <icon src="res/icon/android/drawable-xhdpi/mi_hj.png" gap:platform="android" gap:qualifier="xhdpi" />
+    <icon src="res/icon/android/drawable-xxhdpi/mi_hj.png" gap:platform="android" gap:qualifier="xxhdpi" />
     
     <icon src="res/icon/ios/Icon-72.png" gap:platform="ios" gap:qualifier=""/>
     

@@ -24,7 +24,7 @@ body{
 
 #toggle-view h3 {
 	margin:0;
-	font-size:14px;
+	font-size:20px;
 	color:#FFF;
 }
 
@@ -47,7 +47,7 @@ body{
 
 ul.inner_ul li {
 	color: #fff;
-    font-size: 14px;
+    font-size: 16px;
     padding: 5px 5px 0 !important;
 }
 
