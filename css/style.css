@@ -52,8 +52,11 @@ ul.inner_ul li {
 }
 
 .app_heading{
-	text-align: center;
-	font-size: 22px !important;
-	font-weight: bold;
+    font-size: 22px !important;
+    font-weight: bold;
+    text-align: center;
 }
 
+.app_heading_li{
+	background: none repeat scroll 0 0 #083E8F !important;
+}
