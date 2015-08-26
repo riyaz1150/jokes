@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<gap:plugin name="com.admob.plugin" version="3.0.0" source="plugins.cordova.io" />
 
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
