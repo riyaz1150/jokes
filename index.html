@@ -19,7 +19,7 @@
 		</style>
 		<script type="text/javascript" src="cordova.js"></script>
 	</head>
-	<body onload="onLoad()" onresize="onResize()">
+	<body onload="onLoad()" >
 		<script>
 			function onLoad() {
 				if(( /(ipad|iphone|ipod|android|windows phone)/i.test(navigator.userAgent) )) {
@@ -48,11 +48,12 @@
 			}
 				
 			function initApp() {
-			if (! AdMob ) { alert( 'admob plugin not ready' ); return; }
-			initAd();
+				if (! AdMob ) { alert( 'admob plugin not ready' ); return; }
+				initAd();
 				// display a banner at startup
 				createSelectedBanner();
 			}
+			
 			function initAd(){
 				var defaultOptions = {
 					// bannerId: admobid.banner,
@@ -89,21 +90,20 @@
 			
 			// click button to call following functions
 			function getSelectedAdSize() {
-				var i = document.getElementById("adSize").selectedIndex;
-				var items = document.getElementById("adSize").options;
-				return items[i].value;
+				return 'BANNER';
 			}
 			function getSelectedPosition() {
-				var i = document.getElementById("adPosition").selectedIndex;
-				var items = document.getElementById("adPosition").options;
-				return parseInt( items[i].value );
+				return parseInt( 8 );
 			}
 			function createSelectedBanner() {
-				var overlap = document.getElementById('overlap').checked;
-				var offsetTopBar = document.getElementById('offsetTopBar').checked;
+				var overlap 		= false;
+				var offsetTopBar 	= false;
 				AdMob.createBanner( {adId:admobid.banner, overlap:overlap, offsetTopBar:offsetTopBar, adSize: getSelectedAdSize(), position:getSelectedPosition()} );
 			}
-			function createBannerOfGivenSize() {
+			
+			
+			
+			/*function createBannerOfGivenSize() {
 				var w = document.getElementById('w').value;
 				var h = document.getElementById('h').value;
 				
@@ -119,14 +119,21 @@
 				var y = document.getElementById('y').value;
 				AdMob.showBannerAtXY(x, y);
 			}
+			
 			function prepareInterstitial() {
 				var autoshow = document.getElementById('autoshow').checked;
 				AdMob.prepareInterstitial({adId:admobid.interstitial, autoShow:autoshow});
 			}
+			
 			function onResize(){
 				var s = document.getElementById('sizeinfo');
 				s.innerHTML = "web view: " + window.innerWidth + " x " + window.innerHeight;
 			}
+			
+			*/
+			
+			
+			
 		</script>
 		<ul id="toggle-view">
 			<li class="app_heading_li">
