@@ -3,8 +3,8 @@
 
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.malwaninfotech.HindiJokes"
-        version   = "1.0">
+        id        = "malwaninfotech.com.HindiJokes"
+        version   = "1.1">
 
     <name>Hindi Jokes</name>
 
@@ -18,7 +18,9 @@
 
     <preference name="permissions" value="none"/>
 
-	<gap:plugin name="com.admob.plugin" version="3.0.0" source="plugins.cordova.io" />
+	
+	<gap:plugin name="com.admob.plugin" version="5.0.4" source="plugins.cordova.io"/>
+	
     <icon src="res/icon/android/drawable-ldpi/mi_hj.png" gap:platform="android" gap:qualifier="ldpi" />
     <icon src="res/icon/android/drawable-mdpi/mi_hj.png" gap:platform="android" gap:qualifier="mdpi" />
     <icon src="res/icon/android/drawable-hdpi/mi_hj.png" gap:platform="android" gap:qualifier="hdpi" />
