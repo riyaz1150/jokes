@@ -90,10 +90,14 @@
 			
 			// click button to call following functions
 			function getSelectedAdSize() {
-				return 'BANNER';
+				var i = document.getElementById("adSize").selectedIndex;
+				var items = document.getElementById("adSize").options;
+				return items[i].value;
 			}
 			function getSelectedPosition() {
-				return parseInt( 8 );
+				var i = document.getElementById("adPosition").selectedIndex;
+				var items = document.getElementById("adPosition").options;
+				return parseInt( items[i].value );
 			}
 			function createSelectedBanner() {
 				var overlap 		= false;
@@ -384,36 +388,36 @@
 				</div>
 			</li>
 		</ul>
+		<div id="fullpage">
+		<p>Demo for AdMob Plugin</p>
+		Banner<br /> Standard: <select id="adSize">
+			<option value='SMART_BANNER'>SMART_BANNER</option>
+			<option value='BANNER'>BANNER</option>
+			<option value='MEDIUM_RECTANGLE'>MEDIUM_RECTANGLE</option>
+			<option value='FULL_BANNER'>FULL_BANNER</option>
+			<option value='LEADERBOARD'>LEADERBOARD</option>
+			<option value='SKYSCRAPER'>SKYSCRAPER</option>
+		</select><br /> 
+		<button onclick="createSelectedBanner();">create</button>
+		
+
+		<hr />
+		<select id="adPosition">
+			<option value='1'>Top Left</option>
+			<option value='2'>Top Center</option>
+			<option value='3'>Top Right</option>
+			<option value='4'>Left</option>
+			<option value='5'>Center</option>
+			<option value='6'>Right</option>
+			<option value='7'>Bottom Left</option>
+			<option value='8' selected>Bottom Center</option>
+			<option value='9'>Bottom Right</option>
+		</select>
+		
+		<hr />
+
+		
+	</div>
 	</body>
-	<script>
-		var admobid = {};
-		if( /(android)/i.test(navigator.userAgent) ) { 
-			admobid = { // for Android
-				banner: 'ca-app-pub-4295130623303670/3834194745',
-				interstitial: 'ca-app-pub-4295130623303670/6007101941'
-			};
-		} else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {
-			admobid = { // for iOS
-				banner: 'ca-app-pub-4295130623303670/3834194745',
-				interstitial: 'ca-app-pub-4295130623303670/6007101941'
-			};
-		} else {
-			admobid = { // for Windows Phone
-				banner: 'ca-app-pub-4295130623303670/3834194745',
-				interstitial: 'ca-app-pub-4295130623303670/6007101941'
-			};
-		}
-
-		function initApp() {
-			if (AdMob) {
-				AdMob.createBanner({
-					adId : admobid.banner,
-					position : AdMob.AD_POSITION.BOTTOM_CENTER,
-					autoShow : true
-				});
-			}
-		}
-
-		document.addEventListener('deviceready', initApp, false);
-	</script>
+	
 </html>	
