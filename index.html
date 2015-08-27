@@ -1,303 +1,192 @@
 ﻿<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0;" />
-		<title></title>
-		<script  src="js/jquery.js"></script>
-		<script  src="js/main.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<style type="text/css" media="screen">
-			@font-face {
-				font-family: centurySchoolbook;
-				src: url(/fonts/century-schoolbook.ttf);
-			}
-			body {
-			   font-family: centurySchoolbook;
-			}
-		</style>
-		<script type="text/javascript" src="cordova.js"></script>
-	</head>
-	<body>
-		<ul id="toggle-view">
-			<li class="app_heading_li">
-				<h3 class="app_heading">Hindi Jokes</h3>
-			</li>
-			<li>
-				<h3>सामान्य</h3>
-				<span>+</span>
-				<div class="panel">
-					<ul class="inner_ul">
-						<li>
-							<p>जज- तुम्हारा जुर्म साबित हो चुका है। कल तुम्हें फांसी पर चढ़ाया जायेगा। पप्पू सुनार - वो तो ठीक है लेकिन उतारा कब जायेगा? दुकान भी तो खोलनी है, धंधा वैसे ही मंदा चल रहा है।</p>
-						</li>
-						<li>
-							<p>एक लड़की ज्योतिषी के पास गयी। लड़की- बाबा मेरे दो प्रेमी हैं। मेरी शादी किससे होगी? कौन होगा वो किस्मत वाला? ज्योतिषी- पहले वाले से तेरी शादी होगी और दूसरा किस्मत वाला कहलाएगा </p>
-						</li>
-						<li>
-							<p>संता भाई वो देख आजकल मुझसे बहुत अच्छे से बात कर रही है..! बंता- पागल Block कर, उसे रक्षाबंधन आने वाला है...</p>
-						</li>
-						<li>
-							<p>लड़का- लड़कियां बस की तरह होती हैं, एक जाती है तो दूसरी आती है! लड़की- लड़के रिक्शे की तरह होते हैं, एक को आवाज दो तो सब दौड़े चले आते हैं!</p>
-						</li>
-						<li>
-							<p>पति ने फेसबुक स्टेटस अपडेट किया... 15 अगस्त के शुभ अवसर पर पतंग पर अपनी पत्नी का फोटो चिपकाएं और अपने से दूर जाते देख इसका आनंद लें। पत्नी ने तुरन्त कॉमेंट ठोका, ...और आनन्द दोगुना हो जाएगा जब आपकी पतंग किसी पराये पतंग से पेंच लड़ाएंगी।</p>
-						</li>
-						<li>
-							<p>टीचर-भाईचारे का प्रयोग करते हुए कोई वाक्य बनाओ? छात्र- मैंने दूध वाले से पूछा तुम दूध इतना महंगा क्यो बेचते हो तो वह बोला- भाई चारा महंगा हो गया है। </p>
-						</li>
-						<li>
-							<p>पहला दोस्त- यार मैंने अपनी गर्लफ्रेंड को उसके
-								बर्थडे पे अपनी बहन की नयी हीरे की अँगूठी चुरा के देदी,
+<head>
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport"
+	content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+<title>Hello World</title>
+<script type="text/javascript" src="cordova.js"></script>
+<style type="text/css">
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: gray;
+	color: white;
+}
 
-								दूसरा(थप्पड़ मार के)- अबे कमीने तेरी बहन मेरी गर्लफ्रेंड है,
-								मैंने ही उसको महँगी अँगूठी दी थी,
+div#fullpage {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0px solid red;
+	text-align: center;
+	vertical-align: middle;
+}
 
-								पहला – तो साले मरता क्यों है,
-								तेरे ही घर में ही तो वापस की है,
-								तेरी बहन को :) ;)</p>
-						</li>
-						<li>
-							<p>
-							हाई स्कूल में पढ़ने वाली दो लड़कियां आपस में बातें कर रही थीं।
-							लड़की- यार मेरे पापा ने कहा है कि इस बार अगर परीक्षा में फेल हुई तो तेरी शादी कर दूंगा।
-							लड़की- तो तुमने कितनी तैयारी की है?
-							लड़की-बस फेशियल बाकी हैं!!!
-							</p>
-						</li>
-						<li>
-							<p>
-							पप्पू ने बस स्टॉप पर खड़ी एक लड़की को आँख मारी।
-							लड़की: मैं ऐसी वैसी लड़की नहीं हूँ।
-							पप्पू: वो तो ठीक है मगर
-							चेक करना हमारा फ़र्ज़ बनताहै।
-							</p>
-						</li>
-						<li>
-							<p>
-							बस में कंडेक्टर :- मैडम इन बच्चों की उम्र कितनी है...??
-							महिला :- छोटा 2 साल,
-							बीचका 2.5 साल और बड़ा 3 साल का !
-							बस कंडेक्टर :- मैडम टिकट नही लेना हो तो उम्र भले ही कम बताओ.... पर गेप तो कम से कम 9 महीने का रखो ।
-							मैडम :- बीच का बच्चा मेरे देवरानी का है कलमुहे
-							</p>
-						</li>
-					</ul>
-				</div>
-			</li>
-			<li>
-				<h3>संता - बंता</h3>
-				<span>+</span>
-				<div class="panel">
-					<ul class="inner_ul">
-						<li>
-							<p>संता बंता से बोला गर्लफ्रेंड पूछ रही थी कल मुझसे, क्या तुम मुझे याद करते हो? मुस्कुराकर हमने जवाब दिया, 'पागल अगर याद करना इतना आसान होता तो सब याद कर कॉलेज में टॉप कर लेता न। </p>
-						</li>
-						<li>
-							<p>संता की नई चेक बुक खो गई, तो वह दूसरी चेक बुक लेने बैंक गया। बैंक अधिकारी- सर, हमने आपसे कहा था न कि उसे संभाल कर रखिएगा। अब कोई आपके नकली सिग्नेचर कर आपको ठग सकता है। संता- मैं बेवकूफ नहीं हूं! मैंने पहले ही अपने सारे चेक साइन कर दिए थे, ताकि कोई मेरे सिग्नेचर की नकल कर मुझे बेवकूफ न बना सके। </p>
-						</li>
-						<li>
-							<p>संता- पता है आदमी अपने घर में सिर्फ दो ही कारणों से खुश होता है बंता- कौन सा कारण संता - जब बीवी 'नई' हो या बीवी 'नहीं' हो।</p>
-						</li>
-						<li>
-							<p>संता पप्पू से शादीशुदा लड़की और शादीशुदा लड़का में क्या अंतर है। पप्पू- मंगलसूत्र लटका हो तो लड़की शादीशुदा..... और मुंह लटका हो तो लड़का शादीशुदा </p>
-						</li>
-						<li>
-							<p>संता- यार एक लड़की मुझे तीन बार रिजेक्ट कर चुकी है। फिर से कैसे प्रपोज करूं? बंता- फिर से प्रपोज? तू लड़की पटा रहा है... या एंट्रेंस एग्जाम दे रहा है। </p>
-						</li>
-						<li>
-							<p>संता ने बंता से कहा
-								वो मन्दिर भी जाता है और मस्जिद भी.. वो गुरुद्वारे भी जाता है और चर्च भी..... परेशान पति का कोई मजहब नहीं होता... </p>
-						</li>
-						<li>
-							<p>संता को मुगलों ने पकड़ लिया और उसे अकबर के पास ले गए.. अकबर- इसको बंदी बना दिया जाए... संता- नहीं नहीं जहांपनाह ! रहम !!! मुझे बंदा ही रहने दो.. </p>
-						</li>
-						<li>
-							<p>संता- मैंने सुना है? तुम्हारी शादी तय हो गई है वह भी काफी छोटे कद की लड़की से और तुमने उसे पसंद भी कर लिया है?' बंता- हां यार... जीवन में मुसीबत जितनी छोटी हो उतना ही अच्छा है। </p>
-						</li>
-						<li>
-							<p>बीवी – सुनो जी, जब हमारी नयी नयी शादी हुई थी,
-								तो जब मैं खाना बना कर लाती थी तो तुम खुद कम खाते थे,
-								मुझे ज्यादा खिलाते थे।
-								संता - तो ?
-								बीवी - तो अब ऐसा क्यों नहीं करते ?
-								संता - क्यूंकि अब तुम अच्छा खाना बनाना सीख गयी हो....
-							</p>
-						</li>
-						<li>
-							<p>एक आदमी स्कूटर पर बैठ कर
-								पिक्चर हाल के सामने संता से
-								पूछ बैठा :-
-								आदमी :- भाईसाहब , स्कूटर
-								स्टैंड कहाँ है ?
-								संता :- भाईसाब , पहले आप
-								अपना नाम बताइये ?
-								आदमी :- रमेश !
-								संता :- आपके
-								माता पिता क्या करते हैं ?
-								आदमी :- क्यों ? वैसे
-								भाईसाब मैं , लेट
-								हो जाऊंगा और पिक्चर शुरू
-								हो जाएगी !
-								संता :- तो जल्दी बताओ ??
-								आदमी :- मेरी माँ , एक
-								डॉक्टर हैं और मेरे
-								पिता जी इंजीनियर हैं ! अब
-								बता दीजिये ?
-								संता :- आपके नाम कोई
-								जमीन जायजाद है ?
-								आदमी :- हाँ , गांव में एक खेत
-								मेरे नाम है ? प्लीज़ भाईसाब
-								अब बता दीजिये स्कूटर
-								का स्टैंड कहाँ है ?
-								संता :- आखिरी सवाल , तुम
-								पढ़े लिखे हो ?
-								आदमी :- जी हाँ ! मैं, MBA
-								कर रहा हूँ ! अब बताइये
-								जल्दी से !
-								संता :- भाईसाब , देखिये
-								आपकी पारिवारिक
-								पृष्ठभूमि इतनी अच्छी है ,
-								आपके
-								माता पिता दोनों उच्च
-								शिक्षित हैं , आप खुद भी इतने
-								पढ़े लिखे हैं ,
-								पर मुझे अफ़सोस है
-								कि आप इतनी सी बात
-								नहीं जानते कि....
-								स्कूटर
-								का स्टैंड उसके नीचे
-								लगा होता है ,....
-							</p>
-						</li>
-						<li>
-							<p>
-								विदेश यात्रा से लौटकर आये संता ने अपनी बीवी से पूछा- क्या मैं विदेशी जैसा दिखता हूं?
-								बीवी- नहीं तो
-								संता- तो फिर लन्दन में एक औरत क्यों पूछ रही थी कि मैं विदेशी हूं
-							</p>
-						</li>
-						<li>
-							<p>
-								संता को अपना कुत्ता बेचना था. बंता उसे खरीदने वाला था.
-								.
-								.
-								.
-								.
-								.
-								.
-								बंता - क्या यह कुत्ता वफादार है?
-								.
-								.
-								.
-								.
-								.
-								संता - हां जी, मै इसको तिन बार पहले भी बेच चूका हू, ये इतना वफादार है की हर बार मेरे पास वापिस आ जाता है.
-							</p>
-						</li>
-						<li>
-							<p>
-								एक बार संता अपनी बीवी के साथ ट्रेन मे सफर कर रहा था ।
-								अचानक संता की बीवी को सर्दी लगने लगी तो उसने संता से खिडकी बंद करने के लिए कहा ।
-								संता खिडकी के पास गया और खिडकी को नीचे धकेलने लगा लेकिन खिडकी बंद नही हुई ।
-								तभी अचानक एक बूढा जो सामनेकी सीट पर बैठा था,
-								खिडकी के पास आया और एक झटके मे ही खिडकी को बंदकरते हुए संता से बोला, "बेटा कुछ खा लिया करो"
-								.
-								थोडी देर बाद
-								संता की बीवी संता से बोली, मुझे गर्मी लग रही है वो खिडकी खोल दो ।
-								संता खिडकी के पास गया और खिडकी खोलने का प्रयास किया लेकिन इस बार भी संता असफल रहा ।
-								तभी वही बुढा उठा और एक झटके मे खिडकी खोलते हुए वही बात दोहराई, "बेटा कुछ खा लिया करो"
-								.
-								संता को इस बात से शर्म महसुस हुई और उसने बदला लेने की सोची ।
-								.
-								संता उठा और ट्रेन रुकने वाली चैन को पकडकर ऐसे हाव भाव करने लगा कि मानो वह चैन को खीँचना चाहता हो ।
-								तभी वही बूढा उठा और झट से चैन को खींच दिया और वही बात बोला, "बेटा कुछ खा लिया कर" .
-								ट्रेन रुक गई और टीटीई ने बिना कारण चैन खींचने पर बुढे को पकड लिया ।
-								.
-								जब टीटीई बुढे को पकडकर ले जा रहा था तो बूढा गुस्से मे संता की और देखने लगा ।
-								.
-								तभी संता मुस्कुराते हुए बोला,
-								"ताऊ जी थोडा कम खाया करो"
-							</p>
-						</li>
-						<li>
-							<p>
-								टीचर: अगर अपना कैरेक्टर सुधारना
-								चाहते हो तो अपनी
-								टीचर को मां समझो....
-								.
-								.
-								.
-								.
-								.
-								.
-								.
-								.
-								.
-								.
-								.
-								संता: मैडम इससे तो
-								हमारे पापा का कैरेक्टर खराब
-								होगा....!!
-							</p>
-						</li>
-					</ul>
-				</div>
-			</li>
-			<li>
-				<h3>पति पत्नी और वो</h3>
-				<span>+</span>
-				<div class="panel">
-					<ul class="inner_ul">
-						<li>
-							<p>पति (अपनी पत्नी से)- प्रिये। मैं तुम्हें बहुत प्यार करता हूं? पत्नी- तो क्या मैं आपको नहीं करती? मैं तो तुम्हारे लिये सारी दुनिया से लड़ सकती हूं। पति- लेकिन तुम तो दिन रात मुझसे ही लड़ती रहती हो? पत्नी- जानू...तुम्हीं तो मेरी दुनिया हो..</p>
-						</li>
-						<li>
-							<p>मोहन को रोज रात शराब पीकर देर से घर लौटने की आदत थी। उसे सबक सिखाने के लिए उसकी बीवी राधा ने एक तरकीब सोची। उस रात को वह शराब पीकर आया तो वह पहले से ही चुडै़ल की तरह कपड़े पहन, मेकअप करकेबैठी थी। मोहन के आते ही वह उसे डराने लगी। वह हैरानी से उसे देखता रहा, फिर थोड़ी देर बाद बोला अभी मेरी बीवी आ गई न तुम्हारी खैर नही, तुम उसके सामने आखिर हो क्या?</p>
-						</li>
-						<li>
-							<p>प्रेमिका- चांद कितने होते हैं? प्रेमी- एक तुम और एक ऊपर! शादी के बाद ड्राइंग रूम में पत्नी- चांद कितने होते हैं? पति- अंधी हो क्या, ऊपर क्या वह तुम्हें खरबूजा नजर आ रहा है? </p>
-						</li>
-						<li>
-							<p>घोंचू लाल अपनी पत्नी को अंग्रेजी का प्रशिक्षण दे रहे थे। दोपहर में उनकी पत्नी ने कहा - यह लो डिनर....। घोंचू लाल - पागल, यह डिनर नहीं लंच है पत्नी - पागल होगा तू, यह कल रात का बचा खाना है। </p>
-						</li>
-						<li>
-							<p>कुंवारे लड़के ने अपना फेसबुक स्टेटस डाला- 'वॉन्टेड वाइफ' 2 लड़कियों ने लाइक किया और 140 शादीशुदा पुरुषों ने कॉमेन्ट किया- 'मेरी ले जा' 'मेरी ले जा' 'मेरी ले जा' 'मेरी ले जा'</p>
-						</li>
-					</ul>
-				</div>
-			</li>
-		</ul>
-	</body>
-	<script>
-		var admobid = {};
-		if( /(android)/i.test(navigator.userAgent) ) { 
-			admobid = { // for Android
-				banner: 'ca-app-pub-4295130623303670/3834194745',
-				interstitial: 'ca-app-pub-4295130623303670/6007101941'
-			};
-		} else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {
-			admobid = { // for iOS
-				banner: 'ca-app-pub-4295130623303670/3834194745',
-				interstitial: 'ca-app-pub-4295130623303670/6007101941'
-			};
-		} else {
-			admobid = { // for Windows Phone
-				banner: 'ca-app-pub-4295130623303670/3834194745',
-				interstitial: 'ca-app-pub-4295130623303670/6007101941'
-			};
-		}
+button {
+	font-size: 18px;
+}
+</style>
+</head>
+<body onload="onLoad()" onresize="onResize()">
+<script>
+    function onLoad() {
+        if(( /(ipad|iphone|ipod|android|windows phone)/i.test(navigator.userAgent) )) {
+            document.addEventListener('deviceready', initApp, false);
+        } else {
+            initApp();
+        }
+    }
 
-		function initApp() {
-			if (AdMob) {
-				AdMob.createBanner({
-					adId : admobid.banner,
-					position : AdMob.AD_POSITION.BOTTOM_CENTER,
-					autoShow : true
-				});
-			}
-		}
+    var admobid = {};
+    if( /(android)/i.test(navigator.userAgent) ) {
+		admobid = {
+			banner: 'ca-app-pub-6869992474017983/9375997553',
+			interstitial: 'ca-app-pub-6869992474017983/1657046752'
+		};
+    } else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {
+		admobid = {
+			banner: 'ca-app-pub-6869992474017983/4806197152',
+			interstitial: 'ca-app-pub-6869992474017983/7563979554'
+		};
+    } else {
+		admobid = {
+			banner: 'ca-app-pub-6869992474017983/8878394753',
+			interstitial: 'ca-app-pub-6869992474017983/1355127956'
+		};
+    }
+        
+    function initApp() {
+	if (! AdMob ) { alert( 'admob plugin not ready' ); return; }
+	initAd();
+        // display a banner at startup
+        createSelectedBanner();
+    }
+    function initAd(){
+        var defaultOptions = {
+            // bannerId: admobid.banner,
+            // interstitialId: admobid.interstitial,
+            // adSize: 'SMART_BANNER',
+            // width: integer, // valid when set adSize 'CUSTOM'
+            // height: integer, // valid when set adSize 'CUSTOM'
+            position: AdMob.AD_POSITION.BOTTOM_CENTER,
+            // offsetTopBar: false, // avoid overlapped by status bar, for iOS7+
+            bgColor: 'black', // color name, or '#RRGGBB'
+            // x: integer,		// valid when set position to 0 / POS_XY
+            // y: integer,		// valid when set position to 0 / POS_XY
+            isTesting: true, // set to true, to receiving test ad for testing purpose
+            // autoShow: true // auto show interstitial ad when loaded, set to false if prepare/show
+        };
+        AdMob.setOptions( defaultOptions );
+        registerAdEvents();
+    }
+    // optional, in case respond to events or handle error
+    function registerAdEvents() {
+        // new events, with variable to differentiate: adNetwork, adType, adEvent
+        document.addEventListener('onAdFailLoad', function(data){ 
+        	alert('error: ' + data.error + 
+        			', reason: ' + data.reason + 
+        			', adNetwork:' + data.adNetwork + 
+        			', adType:' + data.adType + 
+        			', adEvent:' + data.adEvent); // adType: 'banner' or 'interstitial'
+        });
+        document.addEventListener('onAdLoaded', function(data){});
+        document.addEventListener('onAdPresent', function(data){});
+        document.addEventListener('onAdLeaveApp', function(data){});
+        document.addEventListener('onAdDismiss', function(data){});
+    }
+    
+    // click button to call following functions
+    function getSelectedAdSize() {
+        var i = document.getElementById("adSize").selectedIndex;
+        var items = document.getElementById("adSize").options;
+        return items[i].value;
+    }
+    function getSelectedPosition() {
+        var i = document.getElementById("adPosition").selectedIndex;
+        var items = document.getElementById("adPosition").options;
+        return parseInt( items[i].value );
+    }
+    function createSelectedBanner() {
+    	var overlap = document.getElementById('overlap').checked;
+        var offsetTopBar = document.getElementById('offsetTopBar').checked;
+        AdMob.createBanner( {adId:admobid.banner, overlap:overlap, offsetTopBar:offsetTopBar, adSize: getSelectedAdSize(), position:getSelectedPosition()} );
+    }
+    function createBannerOfGivenSize() {
+        var w = document.getElementById('w').value;
+        var h = document.getElementById('h').value;
+        
+        AdMob.createBanner( {adId:admobid.banner,
+                           adSize:'CUSTOM', width:w, height:h,
+                           position:getSelectedPosition()} );
+    }
+    function showBannerAtSelectedPosition() {
+        AdMob.showBanner( getSelectedPosition() );
+    }
+    function showBannerAtGivenXY() {
+        var x = document.getElementById('x').value;
+        var y = document.getElementById('y').value;
+        AdMob.showBannerAtXY(x, y);
+    }
+    function prepareInterstitial() {
+        var autoshow = document.getElementById('autoshow').checked;
+        AdMob.prepareInterstitial({adId:admobid.interstitial, autoShow:autoshow});
+    }
+    function onResize(){
+        var s = document.getElementById('sizeinfo');
+        s.innerHTML = "web view: " + window.innerWidth + " x " + window.innerHeight;
+    }
+</script>
+	<div id="fullpage">
+		<p>Demo for AdMob Plugin</p>
+		Banner<br /> Standard: <select id="adSize">
+			<option value='SMART_BANNER'>SMART_BANNER</option>
+			<option value='BANNER'>BANNER</option>
+			<option value='MEDIUM_RECTANGLE'>MEDIUM_RECTANGLE</option>
+			<option value='FULL_BANNER'>FULL_BANNER</option>
+			<option value='LEADERBOARD'>LEADERBOARD</option>
+			<option value='SKYSCRAPER'>SKYSCRAPER</option>
+		</select><br /> <input type='checkbox' id='overlap' />overlap<br/>
+         <input type='checkbox' id='offsetTopBar' />offsetTopBar<br/>
+		<button onclick="createSelectedBanner();">create</button>
+		<br /> Custom Size: (<input id='w' type='text' size=3 /> x <input
+			id='h' type='text' size=3>)
+		<button onclick="createBannerOfGivenSize();">create</button>
+		<br />
 
-		document.addEventListener('deviceready', initApp, false);
-	</script>
-</html>	
+		<button onclick="AdMob.removeBanner();">remove banner</button>
+
+		<hr />
+		<select id="adPosition">
+			<option value='1'>Top Left</option>
+			<option value='2'>Top Center</option>
+			<option value='3'>Top Right</option>
+			<option value='4'>Left</option>
+			<option value='5'>Center</option>
+			<option value='6'>Right</option>
+			<option value='7'>Bottom Left</option>
+			<option value='8' selected>Bottom Center</option>
+			<option value='9'>Bottom Right</option>
+		</select>
+		<button onclick="showBannerAtSelectedPosition();">show</button>
+		<br /> (<input id='x' type='text' size=3 />,<input id='y'
+			type='text' size=3>)
+		<button onclick="showBannerAtGivenXY();">show At XY</button>
+		<br />
+
+		<button onclick="AdMob.hideBanner();">hide banner</button>
+		<hr />
+
+		<p>Interstitial</p>
+		<input type='checkbox' id='autoshow' checked />auto show when ready<br />
+		<button onclick="prepareInterstitial();">Prepare</button>
+		<button onclick="AdMob.showInterstitial();">Show</button>
+		<div id='sizeinfo'></div>
+	</div>
+</body>
+</html>
