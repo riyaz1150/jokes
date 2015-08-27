@@ -1,7 +1,8 @@
 $(document).ready(function () {
 	
 	$('#toggle-view li').click(function () {
-
+		
+		$('div.panel').slideUp('200');
 		var text = $(this).children('div.panel');
 
 		if (text.is(':hidden')) {
