@@ -30,19 +30,22 @@
 				alert(msg);
 			}
 		
-			admob.initAdmob("ca-app-pub-4295130623303670/3834194745","pub-4295130623303670");
+			admob.initAdmob("ca-app-pub-4295130623303670/3834194745","ca-app-pub-4295130623303670/6007101941");
 			document.addEventListener(admob.Event.onBannerFailedReceive, onReceiveFail, false);
 			document.addEventListener(admob.Event.onBannerReceive, onReceiveSuccess, false);
 			
 			
-			
+			function initApp() {
 			var admobParam = new admob.Params();
             admobParam.extra = {'keyword': "admob phonegame"};
             admobParam.isForChild = true;
             admobParam.isTesting = true;
             admob.showBanner(admob.BannerSize.BANNER, admob.Position.TOP_CENTER, admobParam);
+			}
 			
 			//admob.showBanner(admob.BannerSize.BANNER, admob.Position.TOP_APP);
+			
+			document.addEventListener('deviceready', initApp, false);
 			
 			//admob.initAdmob("ca-app-pub-4295130623303670/8403995142","pub-4295130623303670");
 			//admob.showBanner(admob.BannerSize.BANNER, admob.Position.BOTTOM_APP);
@@ -53,9 +56,6 @@
 		<ul id="toggle-view">
 			<li class="app_heading_li">
 				<h3 class="app_heading">Hindi Jokes</h3>
-			</li>
-			<li class="app_heading_li">
-				<h3 class="app_heading"><script>admob.showBanner(admob.BannerSize.BANNER, admob.Position.TOP_APP);</script></h3>
 			</li>
 			<li>
 				<h3>सामान्य</h3>
