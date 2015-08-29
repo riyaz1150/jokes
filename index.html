@@ -30,7 +30,12 @@
 			}
 
 			var admobid = {};
-			if( /(android)/i.test(navigator.userAgent) ) { 
+			admobid = { // for Android
+				banner: 'ca-app-pub-4295130623303670/3834194745',
+				interstitial: 'ca-app-pub-4295130623303670/6007101941'
+			};
+			
+			/*if( /(android)/i.test(navigator.userAgent) ) { 
 				admobid = { // for Android
 					banner: 'ca-app-pub-4295130623303670/3834194745',
 					interstitial: 'ca-app-pub-4295130623303670/6007101941'
@@ -45,7 +50,7 @@
 					banner: 'ca-app-pub-4295130623303670/3834194745',
 					interstitial: 'ca-app-pub-4295130623303670/6007101941'
 				};
-			}
+			}*/
 				
 			function initApp() {
 				if (! AdMob ) { alert( 'admob plugin not ready' ); return; }
@@ -68,7 +73,7 @@
 					// x: integer,		// valid when set position to 0 / POS_XY
 					// y: integer,		// valid when set position to 0 / POS_XY
 					isTesting: false, // set to true, to receiving test ad for testing purpose
-					// autoShow: true // auto show interstitial ad when loaded, set to false if prepare/show
+					autoShow: true // auto show interstitial ad when loaded, set to false if prepare/show
 				};
 				AdMob.setOptions( defaultOptions );
 				registerAdEvents();
@@ -77,6 +82,7 @@
 			function registerAdEvents() {
 				// new events, with variable to differentiate: adNetwork, adType, adEvent
 				document.addEventListener('onAdFailLoad', function(data){ 
+					createSelectedBanner();
 					/*alert('error: ' + data.error + 
 							', reason: ' + data.reason + 
 							', adNetwork:' + data.adNetwork + 
@@ -85,7 +91,9 @@
 				});
 				document.addEventListener('onAdLoaded', function(data){});
 				document.addEventListener('onAdPresent', function(data){});
-				document.addEventListener('onAdLeaveApp', function(data){});
+				document.addEventListener('onAdLeaveApp', function(data){
+					AdMob.showInterstitial();
+				});
 				document.addEventListener('onAdDismiss', function(data){});
 			}
 			
@@ -134,7 +142,7 @@
 			*/
 			
 			function prepareInterstitial() {
-				var autoshow = false;
+				var autoshow = true;
 				AdMob.prepareInterstitial({adId:admobid.interstitial, autoShow:autoshow});
 			}
 			
@@ -144,7 +152,7 @@
 				<h3 class="app_heading">Hindi Jokes</h3>
 			</li>
 			<li>
-				<h3>सामान्य</h3>
+				<h3 onclick="AdMob.showInterstitial();">सामान्य</h3>
 				<span>+</span>
 				<div class="panel">
 					<ul class="inner_ul">
@@ -361,7 +369,7 @@
 				</div>
 			</li>
 			<li>
-				<h3>संता - बंता</h3>
+				<h3 onclick="AdMob.showInterstitial();">संता - बंता</h3>
 				<span>+</span>
 				<div class="panel">
 					<ul class="inner_ul">
@@ -520,7 +528,7 @@
 				</div>
 			</li>
 			<li>
-				<h3>पति पत्नी और वो</h3>
+				<h3 onclick="AdMob.showInterstitial();">पति पत्नी और वो</h3>
 				<span>+</span>
 				<div class="panel">
 					<ul class="inner_ul">
@@ -543,7 +551,7 @@
 				</div>
 			</li>
 			<li>
-				<h3>डॉक्टर</h3>
+				<h3 onclick="AdMob.showInterstitial();">डॉक्टर</h3>
 				<span>+</span>
 				<div class="panel">
 					<ul class="inner_ul">
@@ -598,7 +606,7 @@
 				</div>
 			</li>
 			<li>
-				<h3>बच्चे</h3>
+				<h3 onclick="AdMob.showInterstitial();">बच्चे</h3>
 				<span>+</span>
 				<div class="panel">
 					<ul class="inner_ul">
@@ -667,17 +675,17 @@
 				</div>
 			</li>
 			<li>
-				<h3>पप्पू-राजू</h3>
+				<h3 onclick="AdMob.showInterstitial();">पप्पू-राजू</h3>
 				<span>+</span>
 				<div class="panel">
 					<ul class="inner_ul">
 						<li>
 							<p>
 								पप्पू : पिछले हफ्ते मेरी और मेरी गर्लफ्रेंड की लड़ाई हो गयी , और फिर हम अलग हो गए
-								गोलू : फिर ?
+								राजू : फिर ?
 
 								पप्पू : उसने मुझे चिढ़ाने के लिए अपने नए बॉयफ्रेंड के साथ फोटो खिंचवा कर मुझे भेज दी ..
-								गोलू : ओह , ये तो बहुत बुरा किया उसने !!
+								राजू : ओह , ये तो बहुत बुरा किया उसने !!
 
 								पप्पू : तो में भी कौनसा कम हूँ , उसकी वही फोटो उसके बाप को भेज दी …
 								कमीनी बहुत पीटी ओर अपने कलेजे मे ठंडक आ गई. 
@@ -778,7 +786,7 @@
 				</div>
 			</li>
 			<li>
-				<h3> शराबी</h3>
+				<h3 onclick="AdMob.showInterstitial();"> शराबी</h3>
 				<span>+</span>
 				<div class="panel">
 					<ul class="inner_ul">
